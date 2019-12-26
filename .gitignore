@@ -1,0 +1,15 @@
+3DBuzz in Unity - creating 2D game/Library/
+3DBuzz in Unity - creating 2D game/Temp/
+3DBuzz in Unity - creating 2D game/obj/
+3DBuzz in Unity - creating 2D game/Assembly-CSharp.csproj
+3DBuzz in Unity - creating 2D game/Assembly-CSharp-vs.csproj
+3DBuzz in Unity - creating 2D game/3DBuzz in Unity - creating 2D game.sln
+3DBuzz in Unity - creating 2D game/3DBuzz in Unity - creating 2D game-csharp.sln
+*.suo
+_ReSharper*
+[Bb]in
+[Rr]elease
+[Dd]ebug
+/Build
+Tumbs.db
+Desktop.ini
