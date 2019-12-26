@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Beckground
+    uniqueID: 2516096969
+    locked: 0
+  - name: Mautanis
+    uniqueID: 139948233
+    locked: 0
+  - name: Tree line
+    uniqueID: 2547225937
+    locked: 0
+  - name: Forwared
+    uniqueID: 769981685
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
