@@ -18,6 +18,9 @@ public class PathDefinition : MonoBehaviour
         {
             yield return Points[index];
 
+            if (Points.Length == 1)
+                continue;
+
             if (index <= 0)
                 direction = 1;
             else if (index >= Points.Length - 1)
