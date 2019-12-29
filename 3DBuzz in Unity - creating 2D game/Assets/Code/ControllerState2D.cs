@@ -1,18 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class ControllerState2D : MonoBehaviour
+public class ControllerState2D
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool IsCollidingRight { get; set; }
+    public bool IsCollidingLeft { get; set; }
+    public bool IsCollidingAbove { get; set; }
+    public bool IsCollidingBelow { get; set; }
+    public bool IsMovingDownSlope { get; set; }
+    public bool IsMovingUpSlope { get; set; }
+    public bool IsGrounded { get { return IsCollidingBelow; } }
+    public float SlopeAngle { get; set; }
+
+    public bool MasCollisions { get { return IsCollidingRight || IsCollidingLeft || IsCollidingAbove || IsCollidingBelow; } }
+
+    public void Reset()
     {
-        
+        IsMovingUpSlope =
+            IsMovingDownSlope =
+            IsCollidingLeft =
+            IsCollidingRight =
+            IsCollidingAbove =
+            IsCollidingBelow = false;
+
+        SlopeAngle = 0;
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public override string ToString()
     {
-        
+        return string.Format(
+
+            "(controller: r: {0} l:{1} a:{2} b:{3} down-slope:{4} up-slope:{5} angel:{6}",
+            IsCollidingRight,
+            IsCollidingLeft,
+            IsCollidingAbove,
+            IsCollidingBelow,
+            IsMovingDownSlope,
+            IsMovingUpSlope,
+            SlopeAngle);
     }
 }
