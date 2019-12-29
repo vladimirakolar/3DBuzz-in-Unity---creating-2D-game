@@ -35,7 +35,7 @@ public class FollowPath : MonoBehaviour
         transform.position = _currentPoint.Current.position;
         }
 
-    public void Updata()
+    public void Update()
     {
         if (_currentPoint == null || _currentPoint.Current == null)
             return;
