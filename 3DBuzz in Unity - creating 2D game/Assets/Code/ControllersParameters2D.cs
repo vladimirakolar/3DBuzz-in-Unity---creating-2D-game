@@ -26,4 +26,6 @@ public class ControllersParameters2D
     public float JumpFrequency = .25f;
 
     public bool IsGrounded { get; internal set; }
+
+    public float JumpMagnitude = 12;
 }
