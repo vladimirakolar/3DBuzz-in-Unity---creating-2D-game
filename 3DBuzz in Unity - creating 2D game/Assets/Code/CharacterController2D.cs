@@ -19,6 +19,7 @@ public class CharacterController2D : MonoBehaviour
     public bool CantJump { get { return false; } }
     public bool HandleCollisions { get; set; }
     public ControllersParameters2D Parameters { get { return _overrideParameters ?? DefaultParameters; } }
+    public GameObject StandingOn { get; private set; }
 
     private Vector2 _velocity;
     private Transform _transform;
