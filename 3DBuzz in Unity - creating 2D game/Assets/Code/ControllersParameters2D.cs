@@ -11,7 +11,7 @@ public class ControllersParameters2D
     {
         CanJumpGround,
         CanJumpAnywhere,
-        CanJump
+        CantJump
     }
 
     public Vector2 MaxVelocity = new Vector2(float.MaxValue, float.MaxValue);
@@ -25,4 +25,5 @@ public class ControllersParameters2D
 
     public float JumpFrequency = .25f;
 
+    public bool IsGrounded { get; internal set; }
 }

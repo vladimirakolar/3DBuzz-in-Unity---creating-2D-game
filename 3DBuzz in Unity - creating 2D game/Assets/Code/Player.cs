@@ -43,9 +43,9 @@ public class Player : MonoBehaviour
         }
         else
         {
-            _isFacingRight = 0;
+            _normalizedHorizontalSpeed = 0;
         }
-        if (_controller.CanJump && Input.GetKeyDown(KeyCode.Space))
+        if (_controller.CantJump && Input.GetKeyDown(KeyCode.Space))
         {
             _controller.Jump();
         }
