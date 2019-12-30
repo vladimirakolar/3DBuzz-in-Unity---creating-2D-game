@@ -174,7 +174,7 @@ GameObject:
   m_Layer: 0
   m_Name: End
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -278,11 +278,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7492263983460686095, guid: 205d385e31035a24582fc1d11728831e,
-        type: 3}
-      propertyPath: m_Name
-      value: Dirt Grass Full
-      objectReference: {fileID: 0}
     - target: {fileID: 7492263983460686088, guid: 205d385e31035a24582fc1d11728831e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -337,6 +332,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492263983460686095, guid: 205d385e31035a24582fc1d11728831e,
+        type: 3}
+      propertyPath: m_Name
+      value: Dirt Grass Full
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 205d385e31035a24582fc1d11728831e, type: 3}
@@ -508,11 +508,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7597878558629817035, guid: 7c3131e0b8eaa3f418fab0705e831aa6,
-        type: 3}
-      propertyPath: m_Name
-      value: Platform1
-      objectReference: {fileID: 0}
     - target: {fileID: 5517775024888788589, guid: 7c3131e0b8eaa3f418fab0705e831aa6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -572,6 +567,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597878558629817035, guid: 7c3131e0b8eaa3f418fab0705e831aa6,
+        type: 3}
+      propertyPath: m_Name
+      value: Platform1
       objectReference: {fileID: 0}
     - target: {fileID: 8405451696692886565, guid: 7c3131e0b8eaa3f418fab0705e831aa6,
         type: 3}
@@ -755,7 +755,7 @@ GameObject:
   m_Layer: 0
   m_Name: Start
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -785,7 +785,7 @@ GameObject:
   m_Layer: 0
   m_Name: Mid
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -860,11 +860,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9094389615849765590, guid: dce54e93715f71b4ea56238edeac85f3,
-        type: 3}
-      propertyPath: m_Name
-      value: Dirth Full
-      objectReference: {fileID: 0}
     - target: {fileID: 8967784371067860592, guid: dce54e93715f71b4ea56238edeac85f3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -920,6 +915,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9094389615849765590, guid: dce54e93715f71b4ea56238edeac85f3,
+        type: 3}
+      propertyPath: m_Name
+      value: Dirth Full
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dce54e93715f71b4ea56238edeac85f3, type: 3}
 --- !u!1001 &1591708934
@@ -929,11 +929,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7597878558629817035, guid: 7c3131e0b8eaa3f418fab0705e831aa6,
-        type: 3}
-      propertyPath: m_Name
-      value: Platform2
-      objectReference: {fileID: 0}
     - target: {fileID: 5517775024888788589, guid: 7c3131e0b8eaa3f418fab0705e831aa6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -988,6 +983,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597878558629817035, guid: 7c3131e0b8eaa3f418fab0705e831aa6,
+        type: 3}
+      propertyPath: m_Name
+      value: Platform2
       objectReference: {fileID: 0}
     - target: {fileID: 8405451696692886565, guid: 7c3131e0b8eaa3f418fab0705e831aa6,
         type: 3}
@@ -1092,11 +1092,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6157696254923214445, guid: 46b45c8541a921a44aa8845d9d1b324c,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree
-      objectReference: {fileID: 0}
     - target: {fileID: 6157696254923214443, guid: 46b45c8541a921a44aa8845d9d1b324c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1152,6 +1147,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6157696254923214445, guid: 46b45c8541a921a44aa8845d9d1b324c,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46b45c8541a921a44aa8845d9d1b324c, type: 3}
 --- !u!1 &1849027669
@@ -1166,7 +1166,7 @@ GameObject:
   m_Layer: 0
   m_Name: End
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1191,11 +1191,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7492263983460686095, guid: 205d385e31035a24582fc1d11728831e,
-        type: 3}
-      propertyPath: m_Name
-      value: Dirt Grass Full (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7492263983460686088, guid: 205d385e31035a24582fc1d11728831e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1251,6 +1246,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7492263983460686095, guid: 205d385e31035a24582fc1d11728831e,
+        type: 3}
+      propertyPath: m_Name
+      value: Dirt Grass Full (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 205d385e31035a24582fc1d11728831e, type: 3}
 --- !u!1 &1968469249
@@ -1265,7 +1265,7 @@ GameObject:
   m_Layer: 0
   m_Name: Mid
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1374,7 +1374,7 @@ GameObject:
   m_Layer: 0
   m_Name: Start
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1468,11 +1468,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7589360306200925831, guid: e15eabf4a7937fc47b264656faf6baa4,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 7589360306200925830, guid: e15eabf4a7937fc47b264656faf6baa4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1528,5 +1523,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7589360306200925831, guid: e15eabf4a7937fc47b264656faf6baa4,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e15eabf4a7937fc47b264656faf6baa4, type: 3}
+--- !u!1 &7589360307534490524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7589360306200925831, guid: e15eabf4a7937fc47b264656faf6baa4,
+    type: 3}
+  m_PrefabInstance: {fileID: 7589360307534490523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7589360307534490525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7589360307534490524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4b147bb23118534a959e8c28f3e3f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlatforMask:
+    serializedVersion: 2
+    m_Bits: 0
+  DefaultParameters:
+    MaxVelocity: {x: 3.4028235e+38, y: 3.4028235e+38}
+    SlopeLimit: 30
+    Gravity: -25
+    JumpRestrictions: 0
+    JumpFrequency: 0.25
+--- !u!114 &7589360307534490526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7589360307534490524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c0be7c8e34d464ea3d4bbea2fd0d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
