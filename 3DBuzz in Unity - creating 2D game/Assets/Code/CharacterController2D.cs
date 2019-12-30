@@ -122,13 +122,12 @@ public class CharacterController2D : MonoBehaviour
     private void CalculateRayOrigins()
     {
         var size = new Vector2(_boxCollider.size.x * Mathf.Abs(_localScale.x), _boxCollider.size.y * Mathf.Abs(_localScale.y))/2;
-        var center = new Vector2(_boxCollider.center.x * _localScale.x, _boxCollider.center.y * _localScale.y);
+        var center = new Vector2(_boxCollider.offset.x * _localScale.x, _boxCollider.offset.y * _localScale.y);
+        //replays center to offset
 
         _raycastTopLeft = _transform.position + new Vector3(center.x - size.x + SkinWidth, center.y - SkinWidth);
         _raycastBottomRight = _transform.position + new Vector3(center.x + size.x - SkinWidth, center.y-size.y+SkinWidth);
         _reycastBottomLeft = _transform.position + new Vector3(center.x - size.x + SkinWidth, center.y + SkinWidth);
-
-
     }
   
     private void MoveHorizontally(ref Vector2 deltaMovement)
