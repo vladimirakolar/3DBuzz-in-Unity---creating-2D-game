@@ -205,7 +205,7 @@ public class CharacterController2D : MonoBehaviour
             if (isGoingUp)
             {
                 deltaMovement.y -= SkinWidth;
-                State.IsCollidingBelow = true;
+                State.IsCollidingAbove = true;
             }
             else
             {
