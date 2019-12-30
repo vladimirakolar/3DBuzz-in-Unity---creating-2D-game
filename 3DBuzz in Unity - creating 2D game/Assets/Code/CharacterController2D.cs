@@ -79,6 +79,7 @@ public class CharacterController2D : MonoBehaviour
   
     public void LateUpdate()
     {
+        _velocity.y += Parameters.Gravity * Time.deltaTime;
         Move(Velocity * Time.deltaTime);
     }
     private void Move(Vector2 deltaMovement)
