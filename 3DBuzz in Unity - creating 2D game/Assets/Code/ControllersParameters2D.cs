@@ -9,7 +9,7 @@ public class ControllersParameters2D
 {
     public enum JumpBehavior
     {
-        CanJumpGround,
+        CanJumpOnGround,
         CanJumpAnywhere,
         CantJump
     }

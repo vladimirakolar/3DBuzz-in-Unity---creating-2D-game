@@ -27,7 +27,7 @@ public class CharacterController2D : MonoBehaviour
             if (Parameters.JumpRestrictions == ControllersParameters2D.JumpBehavior.CanJumpAnywhere)
                 return _jumpIn <= 0;
 
-            if (Parameters.JumpRestrictions == ControllersParameters2D.JumpBehavior.CanJumpGround)
+            if (Parameters.JumpRestrictions == ControllersParameters2D.JumpBehavior.CanJumpOnGround)
                 return State.IsGrounded;
 
             return false;
