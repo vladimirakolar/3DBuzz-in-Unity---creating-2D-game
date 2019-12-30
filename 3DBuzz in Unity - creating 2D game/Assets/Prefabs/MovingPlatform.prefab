@@ -143,5 +143,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Path: {fileID: 0}
-  Speed: 10
+  Speed: 5
   MaxDistanceToGoal: 0.1
