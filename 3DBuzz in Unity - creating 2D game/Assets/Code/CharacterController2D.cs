@@ -110,7 +110,7 @@ public class CharacterController2D : MonoBehaviour
         _velocity.y = Mathf.Min(_velocity.y, Parameters.MaxVelocity.y);
 
         if (State.IsMovingUpSlope)
-            _velocity = 0;
+            _velocity.y = 0;
         
     }
 
@@ -122,7 +122,7 @@ public class CharacterController2D : MonoBehaviour
     private void CalculateRayOrigins()
     {
         var size = new Vector2(_boxCollider.size.x * Mathf.Abs(_localScale.x), _boxCollider.size.y * Mathf.Abs(_localScale.y))/2;
-        var center = new Vector2(_boxCollider.size.y * _localScale.x, _boxCollider.center.y * _localScale.y);
+        var center = new Vector2(_boxCollider.center.x * _localScale.x, _boxCollider.center.y * _localScale.y);
 
         _raycastTopLeft = _transform.position + new Vector3(center.x - size.x + SkinWidth, center.y - SkinWidth);
         _raycastBottomRight = _transform.position + new Vector3(center.x + size.x - SkinWidth, center.y-size.y+SkinWidth);
@@ -147,11 +147,11 @@ public class CharacterController2D : MonoBehaviour
             if (!rayCastHit)
                 continue;
 
-            if (i == 0 && HandeleHorizontalSlope(ref deltaMovement, Vector2.Angle(rayCastHit.normal, Vector2.up) isGoingRight))
+            if (i == 0 && HandeleHorizontalSlope(ref deltaMovement, Vector2.Angle(rayCastHit.normal, Vector2.up), isGoingRight))
                 break;
 
             deltaMovement.x = rayCastHit.point.x - rayVector.x;
-            rayDirection = Mathf.Abs(deltaMovement.x);
+            rayDistance = Mathf.Abs(deltaMovement.x);
 
             if(isGoingRight)
             {
@@ -179,9 +179,9 @@ public class CharacterController2D : MonoBehaviour
 
     }
 
-    private void HandeleHorizontalSlope(ref Vector2 deltaMovement, float angel, bool isGoingRight)
+    private bool HandeleHorizontalSlope(ref Vector2 deltaMovement, float angel, bool isGoingRight)
     {
-
+        return false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
