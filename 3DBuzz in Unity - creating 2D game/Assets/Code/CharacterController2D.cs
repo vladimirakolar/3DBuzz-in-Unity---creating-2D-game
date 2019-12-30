@@ -170,7 +170,52 @@ public class CharacterController2D : MonoBehaviour
 
     private void MoveVertically (ref Vector2 deltaMovement)
     {
+        var isGoingUp = deltaMovement.y > 0;
+        var rayDistance = Mathf.Abs(deltaMovement.y) + SkinWidth;
+        var rayDirection = isGoingUp ? Vector2.up : -Vector2.up;
+        var rayOrigin = isGoingUp ? _raycastTopLeft : _reycastBottomLeft;
 
+        rayOrigin.x += deltaMovement.x;
+
+        var standingOnDistance = float.MaxValue;
+        for (var i = 0; i < TotalVerticalRays; i++)
+        {
+            var rayVector=new Vector2(rayOrigin.x + (i * _horizontalDistanceBetweenRays), rayOrigin.y);
+            Debug.DrawRay(rayVector, rayDirection * rayDistance, Color.red);
+
+            var raycastHit = Physics2D.Raycast(rayVector, rayDirection, rayDistance, PlatforMask);
+            if (!raycastHit)
+                continue;
+
+            if (!isGoingUp)
+            {
+                var verticalDistanceToHit = _transform.position.y - raycastHit.point.y;
+                if (verticalDistanceToHit<standingOnDistance)
+                {
+                    standingOnDistance = verticalDistanceToHit;
+                    StandingOn = raycastHit.collider.gameObject;
+                }
+            }
+
+            deltaMovement.y = raycastHit.point.y - rayVector.y;
+            rayDistance = Mathf.Abs(deltaMovement.y);
+
+            if (isGoingUp)
+            {
+                deltaMovement.y -= SkinWidth;
+                State.IsCollidingBelow = true;
+            }
+            else
+            {
+                deltaMovement.y += SkinWidth;
+                State.IsCollidingBelow = true;
+            }
+            if (isGoingUp && deltaMovement.y > .0001f)
+                State.IsMovingUpSlope = true;
+
+            if (rayDistance < SkinWidth + .0001f)
+                break;
+        }
     }
 
     private void HandeleVerticalSlope(ref Vector2 deltaMovement)
