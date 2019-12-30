@@ -37,7 +37,7 @@ public class CharacterController2D : MonoBehaviour
 
     public void Awake()
     {
-      // State = new ControllersParameters2D();
+        HandleCollisions = true;
         State = new ControllerState2D();
         _transform = transform;
         _localScale = transform.localScale;
@@ -135,13 +135,13 @@ public class CharacterController2D : MonoBehaviour
     {
         var isGoingRight = deltaMovement.x > 0;
         var rayDistance = Mathf.Abs(deltaMovement.x) + SkinWidth;
-        var rayDirection = isDoingRight ? Vector2.right : -Vector2.right;
+        var rayDirection = isGoingRight ? Vector2.right : -Vector2.right;
         var rayOrigin = isGoingRight ? _raycastBottomRight : _reycastBottomLeft;
 
         for (var i=0; i < TotalHorizontalRays; i++)
         {
             var rayVector = new Vector2(rayOrigin.x, rayOrigin.y + (i * _verticalDistanceBetweenRays));
-            Debug.DebugRay(rayVector, rayDirection * rayDistance, Color.red);
+            Debug.DrawRay(rayVector, rayDirection * rayDistance, Color.red);
 
             var rayCastHit = Physics2D.Raycast(rayVector, rayDirection, rayDistance, PlatforMask);
             if (!rayCastHit)
@@ -160,7 +160,7 @@ public class CharacterController2D : MonoBehaviour
             }
             else
             {
-                deltaMovement.x -= SkinWidth;
+                deltaMovement.x += SkinWidth;
                 State.IsCollidingLeft = true;
             }
 
