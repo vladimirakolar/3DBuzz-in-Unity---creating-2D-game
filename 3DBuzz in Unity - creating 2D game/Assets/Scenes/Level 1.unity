@@ -161,7 +161,6 @@ MonoBehaviour:
   Points:
   - {fileID: 2022102341}
   - {fileID: 1382320085}
-  - {fileID: 1849027670}
 --- !u!1 &39362323
 GameObject:
   m_ObjectHideFlags: 0
