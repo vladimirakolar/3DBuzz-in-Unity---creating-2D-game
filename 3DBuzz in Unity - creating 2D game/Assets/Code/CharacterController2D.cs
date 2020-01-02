@@ -266,7 +266,23 @@ public class CharacterController2D : MonoBehaviour
 
     private bool HandeleHorizontalSlope(ref Vector2 deltaMovement, float angel, bool isGoingRight)
     {
-        return false;
+        if (Mathf.RoundToInt(angel) == 90)
+            return false;
+
+        if (angel > Parameters.SlopeLimit)
+        {
+            deltaMovement.x = 0;
+            return true;
+        }
+
+        if (deltaMovement.y > .07f)
+            return true;
+
+        deltaMovement.x += isGoingRight ? -SkinWidth : SkinWidth;
+        deltaMovement.y = Mathf.Abs(Mathf.Tan(angel * Mathf.Deg2Rad) * deltaMovement.x);
+        State.IsMovingUpSlope = true;
+        State.IsCollidingBelow = true;
+        return true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
