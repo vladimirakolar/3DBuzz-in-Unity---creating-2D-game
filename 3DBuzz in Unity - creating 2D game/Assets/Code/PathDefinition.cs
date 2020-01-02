@@ -40,9 +40,9 @@ public class PathDefinition : MonoBehaviour
         if (points.Count < 2)
             return;
        
-        for (var i = 1; i < Points.Length; i++)
+        for (var i = 1; i < points.Count; i++)
         {
-            Gizmos.DrawLine(Points[i - 1].position, Points[i].position);
+            Gizmos.DrawLine(points[i - 1].position, points[i].position);
         }
     }
 }

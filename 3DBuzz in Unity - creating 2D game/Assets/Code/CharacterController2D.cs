@@ -21,6 +21,7 @@ public class CharacterController2D : MonoBehaviour
     public ControllersParameters2D Parameters { get { return _overrideParameters ?? DefaultParameters; } }
     public GameObject StandingOn { get; private set; }
     public Vector3 PlatformVelocity { get; private set; }
+
     public bool CanJump
     {
         get
@@ -137,7 +138,7 @@ public class CharacterController2D : MonoBehaviour
         if (StandingOn != null)
         {
             _activGlobalPlatformPoint = transform.position;
-            _activGlobalPlatformPoint = StandingOn.transform.InverseTransformPoint(transform.position);
+            _activLocalPlatformPoint = StandingOn.transform.InverseTransformPoint(transform.position);
         }
         
     }
