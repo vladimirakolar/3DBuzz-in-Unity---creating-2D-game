@@ -88,6 +88,7 @@ public class CharacterController2D : MonoBehaviour
    
     public void Jump()
     {
+        //TODO: moving platforms.
         AddForce(new Vector2 (0, Parameters.JumpMagnitude));
         _jumpIn = Parameters.JumpFrequency;
     }
@@ -238,7 +239,29 @@ public class CharacterController2D : MonoBehaviour
     
     private void HandeleVerticalSlope(ref Vector2 deltaMovement)
     {
+        var center = (_reycastBottomLeft.x + _raycastBottomRight.x) / 2;
+        var direction = -Vector2.up;
 
+        var slopeDistance = SlopeLimitTangant * (_raycastBottomRight.x - center);
+        var SlopeRayVector = new Vector2(center, _reycastBottomLeft.y);
+
+        Debug.DrawRay(SlopeRayVector, direction * slopeDistance, Color.yellow);
+        var raycasteHit = Physics2D.Raycast(SlopeRayVector, direction, slopeDistance, PlatforMask);
+        if (!raycasteHit)
+            return;
+
+        var isMovingDownSlope = Mathf.Sign(raycasteHit.normal.x) == Mathf.Sign(deltaMovement.x);
+        if (!isMovingDownSlope)
+            return;
+
+        var angel = Vector2.Angle(raycasteHit.normal, Vector2.up);
+        if (Mathf.Abs(angel) < .0001f)
+            return;
+
+        State.IsMovingDownSlope = true;
+        State.SlopeAngle = angel;
+        deltaMovement.y = raycasteHit.point.y - SlopeRayVector.y;
+    
     }
 
     private bool HandeleHorizontalSlope(ref Vector2 deltaMovement, float angel, bool isGoingRight)
