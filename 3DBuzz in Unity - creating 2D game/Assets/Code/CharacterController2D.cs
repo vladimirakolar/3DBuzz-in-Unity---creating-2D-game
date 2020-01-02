@@ -111,7 +111,7 @@ public class CharacterController2D : MonoBehaviour
             if (deltaMovement.y < 0 && wasGrounded)
                 HandeleVerticalSlope(ref deltaMovement);
 
-            if (Mathf.Abs(deltaMovement.x) > .0001f)
+            if (Mathf.Abs(deltaMovement.x) > .001f)
                 MoveHorizontally(ref deltaMovement);
 
             MoveVertically(ref deltaMovement);
@@ -119,7 +119,7 @@ public class CharacterController2D : MonoBehaviour
 
         _transform.Translate(deltaMovement, Space.World);
 
-        //ToDo: moving platform code.
+        //ToDo: Aditional moving platform code.
 
         if (Time.deltaTime > 0)
             _velocity = deltaMovement / Time.deltaTime;
@@ -143,9 +143,9 @@ public class CharacterController2D : MonoBehaviour
         var center = new Vector2(_boxCollider.offset.x * _localScale.x, _boxCollider.offset.y * _localScale.y);
         //replays center to offset
 
-        _raycastTopLeft = _transform.position + new Vector3(center.x - size.x + SkinWidth, center.y - SkinWidth);
+        _raycastTopLeft = _transform.position + new Vector3(center.x - size.x + SkinWidth, center.y + size.y - SkinWidth);
         _raycastBottomRight = _transform.position + new Vector3(center.x + size.x - SkinWidth, center.y - size.y + SkinWidth);
-        _reycastBottomLeft = _transform.position + new Vector3(center.x - size.x + SkinWidth, center.y + SkinWidth);
+        _reycastBottomLeft = _transform.position + new Vector3(center.x - size.x + SkinWidth, center.y - size.y + SkinWidth);
     }
   
     private void MoveHorizontally(ref Vector2 deltaMovement)
