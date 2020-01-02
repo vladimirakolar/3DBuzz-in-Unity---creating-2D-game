@@ -42,6 +42,7 @@ public class CharacterController2D : MonoBehaviour
     private BoxCollider2D _boxCollider;
     private ControllersParameters2D _overrideParameters;
     private float _jumpIn;
+    private GameObject _lastStendingOn;
 
     private Vector3
         _activGlobalPlatformPoint,
@@ -139,6 +140,22 @@ public class CharacterController2D : MonoBehaviour
         {
             _activGlobalPlatformPoint = transform.position;
             _activLocalPlatformPoint = StandingOn.transform.InverseTransformPoint(transform.position);
+
+            if (_lastStendingOn != StandingOn)
+            {
+                if (_lastStendingOn != null)
+                    _lastStendingOn.SendMessage("ControllerExit2D", this, SendMessageOptions.DontRequireReceiver);
+
+                StandingOn.SendMessage("ControllerEnter2D", this, SendMessageOptions.DontRequireReceiver);
+                _lastStendingOn = StandingOn;
+            }
+            else if (StandingOn != null)
+                StandingOn.SendMessage("ControllerStay2D", this, SendMessageOptions.DontRequireReceiver);
+        }
+        else if (_lastStendingOn !=null)
+        {
+            _lastStendingOn.SendMessage("ControllerExxit2D", this, SendMessageOptions.DontRequireReceiver);
+            _lastStendingOn = null;
         }
         
     }
