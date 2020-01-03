@@ -367,7 +367,11 @@ public class CharacterController2D : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        
+        var parametars = other.gameObject.GetComponent<ControllerPhsysicsVolume2D>();
+        if (parametars = null)
+            return;
+
+        _overrideParameters = null;
     }
 
 
