@@ -987,9 +987,9 @@ MonoBehaviour:
   - {fileID: 730439602}
   - {fileID: 1150948447}
   - {fileID: 1168381905}
-  ParallaxScale: 2
-  ParallexReductionFactor: 4
-  Smoothing: 3
+  ParallaxScale: 0.5
+  ParallexReductionFactor: 2
+  Smoothing: 2
 --- !u!1001 &721265633
 PrefabInstance:
   m_ObjectHideFlags: 0
