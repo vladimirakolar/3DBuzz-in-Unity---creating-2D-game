@@ -177,6 +177,26 @@ public class CharacterController2D : MonoBehaviour
 
         StandingOn = null;
     }
+
+    private void CorrectHorizontalPlacment(ref Vector2 deltaMovement, bool isRight)
+    {
+        var halfWidth = (_boxCollider.size.x * _localScale.x) / 2;
+        var rayOrigin = isRight ? _raycastBottomRight : _reycastBottomLeft;
+
+        if (isRight)
+            rayOrigin.x -= (halfWidth + SkinWidth);
+        else
+            rayOrigin.x += (halfWidth - SkinWidth);
+
+        var rayDirection = isRight ? Vector2.right : -Vector2.right;
+        var offset = 0f;
+
+        for (var i = 1; i < TotalHorizontalRays - 1; i++)
+        {
+            var rayVector = new Vector2(rayOrigin.x, deltaMovement.y + rayOrigin.y + (i * _verticalDistanceBetweenRays));
+            Debug.DrawRay(rayVector, rayDirection * halfWidth, isRight ? Color.cyan : Color.magenta);
+        }
+    }
   
     private void CalculateRayOrigins()
     {
