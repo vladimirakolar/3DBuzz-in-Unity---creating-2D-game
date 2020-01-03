@@ -46,7 +46,7 @@ TagManager:
     locked: 1
   - name: Tree line
     uniqueID: 2547225937
-    locked: 0
+    locked: 1
   - name: Forwared
     uniqueID: 769981685
     locked: 0
