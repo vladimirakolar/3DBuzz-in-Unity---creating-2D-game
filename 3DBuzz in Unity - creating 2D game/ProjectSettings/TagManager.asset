@@ -50,6 +50,9 @@ TagManager:
   - name: Forwared
     uniqueID: 769981685
     locked: 0
+  - name: Particles
+    uniqueID: 17205147
+    locked: 0
   - name: Player
     uniqueID: 3916424189
     locked: 0
