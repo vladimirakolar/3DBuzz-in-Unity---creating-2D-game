@@ -983,7 +983,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfdca64d664614e448bb63b6d403d0ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Background: []
+  Background:
+  - {fileID: 730439602}
+  - {fileID: 1150948447}
+  - {fileID: 1168381905}
   ParallaxScale: 2
   ParallexReductionFactor: 4
   Smoothing: 3
