@@ -187,7 +187,7 @@ public class CharacterController2D : MonoBehaviour
         var rayOrigin = isRight ? _raycastBottomRight : _reycastBottomLeft;
 
         if (isRight)
-            rayOrigin.x -= (halfWidth + SkinWidth);
+            rayOrigin.x -= (halfWidth - SkinWidth);
         else
             rayOrigin.x += (halfWidth - SkinWidth);
 
@@ -196,9 +196,17 @@ public class CharacterController2D : MonoBehaviour
 
         for (var i = 1; i < TotalHorizontalRays - 1; i++)
         {
-            var rayVector = new Vector2(rayOrigin.x, deltaMovement.y + rayOrigin.y + (i * _verticalDistanceBetweenRays));
-            Debug.DrawRay(rayVector, rayDirection * halfWidth, isRight ? Color.cyan : Color.magenta);
+            var rayVector = new Vector2(deltaMovement.x + rayOrigin.x, deltaMovement.y + rayOrigin.y + (i * _verticalDistanceBetweenRays));
+            //            Debug.DrawRay(rayVector, rayDirection * halfWidth, isRight ? Color.cyan : Color.magenta);
+
+            var raycastHit = Physics2D.Raycast(rayVector, rayDirection, halfWidth, PlatforMask);
+            if (!raycastHit)
+                continue;
+
+            offset = isRight ? ((raycastHit.point.x - _transform.position.x) - halfWidth) : (halfWidth - (_transform.position.x - raycastHit.point.x));
         }
+
+        deltaMovement.x += offset;
     }
   
     private void CalculateRayOrigins()
