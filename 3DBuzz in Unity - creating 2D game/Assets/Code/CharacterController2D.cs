@@ -123,6 +123,9 @@ public class CharacterController2D : MonoBehaviour
                 MoveHorizontally(ref deltaMovement);
 
             MoveVertically(ref deltaMovement);
+
+            CorrectHorizontalPlacment(ref deltaMovement, true);
+            CorrectHorizontalPlacment(ref deltaMovement, false);
         }
 
         _transform.Translate(deltaMovement, Space.World);
