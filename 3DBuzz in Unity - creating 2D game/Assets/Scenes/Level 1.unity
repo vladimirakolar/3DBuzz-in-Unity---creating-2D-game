@@ -2162,7 +2162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a27784d1b5014191541e6ad7c84e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Skin: {fileID: 11400000, guid: 38c2db5a0e23f764498b45e57d0a4cfc, type: 2}
+  Skin: {fileID: 11400000, guid: ec4b05f9ed5d14f4dba7764d164885a6, type: 2}
 --- !u!114 &1419040221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2176,6 +2176,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DebugSpawn: {fileID: 0}
+  BonusCutoffSeconds: 15
+  BonusSecondMultiplier: 3
 --- !u!4 &1419040222
 Transform:
   m_ObjectHideFlags: 0
@@ -3371,12 +3373,12 @@ PrefabInstance:
     - target: {fileID: 7589360306200925830, guid: e15eabf4a7937fc47b264656faf6baa4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.11
+      value: 4.97
       objectReference: {fileID: 0}
     - target: {fileID: 7589360306200925830, guid: e15eabf4a7937fc47b264656faf6baa4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.95
+      value: 6.1
       objectReference: {fileID: 0}
     - target: {fileID: 7589360306200925830, guid: e15eabf4a7937fc47b264656faf6baa4,
         type: 3}
