@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6917341613560735277}
   - component: {fileID: 404237155213178377}
   - component: {fileID: 1481159531}
+  - component: {fileID: 8239980802795746219}
   m_Layer: 8
   m_Name: Punji Sticks
   m_TagString: Untagged
@@ -67,7 +68,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 769981685
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 33e63230cdd1d69489565cf6220890cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -106,3 +107,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.77, y: 3.41}
   m_EdgeRadius: 0
+--- !u!114 &8239980802795746219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16015950733265820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8252c84d65012645af1ed6a11974f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
