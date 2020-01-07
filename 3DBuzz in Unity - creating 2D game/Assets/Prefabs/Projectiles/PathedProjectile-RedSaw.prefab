@@ -97,6 +97,7 @@ MonoBehaviour:
   DestroyEffect: {fileID: 4344001286033454136, guid: 822c11e644618354b851fa4c5181fd38,
     type: 3}
   PointsToGivePlayer: 5
+  DestroySound: {fileID: 8300000, guid: b3b240aa33e39354989b763cfae4d21c, type: 3}
 --- !u!114 &6740744964401817574
 MonoBehaviour:
   m_ObjectHideFlags: 0

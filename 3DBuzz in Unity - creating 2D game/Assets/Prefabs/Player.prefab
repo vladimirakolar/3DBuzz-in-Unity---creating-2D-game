@@ -4797,6 +4797,9 @@ MonoBehaviour:
   ProjectileFireLocation: {fileID: 6016876809813199129}
   FireProjectileEffect: {fileID: 228574405846372651, guid: 84167acf8f8746f4ca04ab6cb63f56fd,
     type: 3}
+  PlayerHitSound: {fileID: 8300000, guid: 3b58712872cbb1145944b5727b90c741, type: 3}
+  PlayerShootSound: {fileID: 8300000, guid: e1dfe6212f5b4ca43b090128bfc6f09b, type: 3}
+  PlaeyHealthSound: {fileID: 8300000, guid: 663bf3c96fc08d045a8d65076bb86312, type: 3}
 --- !u!114 &7589360307534490525
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class PathedProjectile : MonoBehaviour, ITakeDamage
 
     public GameObject DestroyEffect;
     public int PointsToGivePlayer;
+    public AudioClip DestroySound;
 
     public void Initalize(Transform destination, float speed)
     {
@@ -28,6 +29,9 @@ public class PathedProjectile : MonoBehaviour, ITakeDamage
             Instantiate(DestroyEffect, transform.position, transform.rotation);
 
         Destroy(gameObject);
+
+        if (DestroySound != null)
+            AudioSource.PlayClipAtPoint(DestroySound, transform.position);
     }
 
     public void TakeDamage(int damage, GameObject instigator)

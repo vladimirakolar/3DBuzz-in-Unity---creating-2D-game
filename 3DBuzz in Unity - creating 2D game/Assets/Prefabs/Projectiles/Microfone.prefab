@@ -103,6 +103,7 @@ MonoBehaviour:
     type: 3}
   PointsToGiveToPlayer: 0
   TimeToLive: 10
+  DestroySound: {fileID: 8300000, guid: b3b240aa33e39354989b763cfae4d21c, type: 3}
 --- !u!61 &64569631031814171
 BoxCollider2D:
   m_ObjectHideFlags: 0

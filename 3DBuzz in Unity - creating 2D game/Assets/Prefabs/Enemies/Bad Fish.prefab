@@ -171,6 +171,8 @@ MonoBehaviour:
     type: 3}
   DestroyedEffect: {fileID: 8283227384644097057, guid: d5eb97b1034b6da43ba1c33f2681ccef,
     type: 3}
+  PointsToGivePlayer: 50
+  ShootSound: {fileID: 8300000, guid: 72bd13b55a3f116499f7b67097a399c4, type: 3}
 --- !u!114 &5358343200384965979
 MonoBehaviour:
   m_ObjectHideFlags: 0

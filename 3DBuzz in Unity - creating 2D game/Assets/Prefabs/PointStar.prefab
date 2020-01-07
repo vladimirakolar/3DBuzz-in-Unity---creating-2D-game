@@ -142,3 +142,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Effect: {fileID: 7702849745866681, guid: 004b89f308bc3e940ba785292e0d4889, type: 3}
   PointsToAdd: 10
+  HitStarSound: {fileID: 8300000, guid: 80dd06fd2ca9fd245956f9df9539d1ce, type: 3}
