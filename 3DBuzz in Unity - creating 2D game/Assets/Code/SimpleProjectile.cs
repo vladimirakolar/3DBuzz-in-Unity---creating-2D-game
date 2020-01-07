@@ -22,6 +22,7 @@ public class SimpleProjectile : Projectile , ITakeDamage
 
     public void TakeDamage(int damage, GameObject instigator)
     {
+
         if (PointsToGiveToPlayer != 0)
         {
             var projectile = instigator.GetComponent<Projectile>();
