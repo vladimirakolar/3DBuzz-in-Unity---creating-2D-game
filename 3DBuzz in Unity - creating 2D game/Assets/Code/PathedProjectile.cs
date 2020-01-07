@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PathedProjectile : MonoBehaviour
+public class PathedProjectile : MonoBehaviour, ITakeDamage
 {
     private Transform _destination;
     private float _speed;
 
     public GameObject DestroyEffect;
+    public int PointsToGivePlayer;
 
     public void Initalize(Transform destination, float speed)
     {
@@ -27,5 +28,20 @@ public class PathedProjectile : MonoBehaviour
             Instantiate(DestroyEffect, transform.position, transform.rotation);
 
         Destroy(gameObject);
+    }
+
+    public void TakeDamage(int damage, GameObject instigator)
+    {
+        if (DestroyEffect != null)
+            Instantiate(DestroyEffect, transform.position, transform.rotation);
+
+        Destroy(gameObject);
+
+        var projectile = instigator.GetComponent<Projectile>();
+        if (projectile != null && projectile.Owner.GetComponent<Player>()!= null && PointsToGivePlayer != 0)
+        {
+            GameManager.Instance.AddPoints(PointsToGivePlayer);
+            FloatingText.Show(string.Format("+{0}!", PointsToGivePlayer), "PointStarText", new FromWorldPointTextPositioner(Camera.main, transform.position, 1.5f, 50));
+        }
     }
 }

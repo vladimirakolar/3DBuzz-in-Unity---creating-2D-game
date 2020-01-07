@@ -17,7 +17,7 @@ public class SimpleProjectile : Projectile , ITakeDamage
             return;
         }
 
-        transform.Translate((Direction + new Vector2(InitialVelocity.x, 0)) * Speed * Time.deltaTime, Space.World);
+        transform.Translate(Direction*((Mathf.Abs(InitialVelocity.x)+Speed)*Time.deltaTime), Space.World);
     }
 
     public void TakeDamage(int damage, GameObject instigator)
