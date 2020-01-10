@@ -33,6 +33,7 @@ public class LevelManager : MonoBehaviour
 
     public void Awake()
     {
+        _savedPoints = GameManager.Instance.Points;
         Instance = this;
     }
 
@@ -90,6 +91,35 @@ public class LevelManager : MonoBehaviour
         _savedPoints = GameManager.Instance.Points;
         _started = DateTime.UtcNow;
 
+    }
+
+    [Obsolete]
+    public void GoTonextLevelCo(string levelName)
+    {
+        StartCoroutine(GoToNextLevelCo(levelName));
+    }
+
+    private void StartCoroutine(IEnumerable enumerable)
+    {
+        throw new NotImplementedException();
+    }
+
+    [Obsolete]
+    private IEnumerable GoToNextLevelCo(string levelName)
+    {
+        Player.FinishLevel();
+        GameManager.Instance.AddPoints(CurrentTimeBonus);
+
+        FloatingText.Show("Level Complete!", "CheckPointText", new CenteredTextPositioner(.2f));
+        yield return new WaitForSeconds(1);
+
+        FloatingText.Show(string.Format("{0} points!", GameManager.Instance.Points), "CheckPointText", new CenteredTextPositioner(.1f));
+        yield return new WaitForSeconds(5f);
+
+        if (string.IsNullOrEmpty(levelName))
+            Application.LoadLevel("StartScreen");
+        else
+            Application.LoadLevel(levelName);
     }
 
     public void KillPlayer()

@@ -3933,7 +3933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d348b1657f24344b9b0f3115a671c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: 
+  LevelName: Level2
 --- !u!61 &1930159319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3958,7 +3958,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.61, y: 5.98}
+  m_Size: {x: 2.61, y: 3.14}
   m_EdgeRadius: 0
 --- !u!4 &1930159320
 Transform:
@@ -3968,7 +3968,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930159317}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.21, y: 5.33, z: 0}
+  m_LocalPosition: {x: 36.45, y: 9.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
