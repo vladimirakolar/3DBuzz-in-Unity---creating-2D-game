@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 5207178213743605414}
   - component: {fileID: 2006335963150468447}
   - component: {fileID: 8925026367983582186}
+  - component: {fileID: 2126782463}
   m_Layer: 0
   m_Name: PointStar
   m_TagString: Untagged
@@ -143,3 +144,24 @@ MonoBehaviour:
   Effect: {fileID: 7702849745866681, guid: 004b89f308bc3e940ba785292e0d4889, type: 3}
   PointsToAdd: 10
   HitStarSound: {fileID: 8300000, guid: 80dd06fd2ca9fd245956f9df9539d1ce, type: 3}
+  Animator: {fileID: 2126782463}
+  Renderer: {fileID: 5904890363295937729}
+--- !u!95 &2126782463
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5606663398729877182}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cce16a024183d984bb6c1ad3bc0fd69d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
