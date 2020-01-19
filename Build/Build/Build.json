@@ -1,9 +1,9 @@
 {
 "companyName": "DefaultCompany",
 "productName": "3DBuzz in Unity - creating 2D game",
-"dataUrl": "Bild.data.unityweb",
-"wasmCodeUrl": "Bild.wasm.code.unityweb",
-"wasmFrameworkUrl": "Bild.wasm.framework.unityweb",
+"dataUrl": "Build.data.unityweb",
+"wasmCodeUrl": "Build.wasm.code.unityweb",
+"wasmFrameworkUrl": "Build.wasm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},

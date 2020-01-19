@@ -99,13 +99,8 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(GoToNextLevelCo(levelName));
     }
 
-    private void StartCoroutine(IEnumerable enumerable)
-    {
-        throw new NotImplementedException();
-    }
-
     [Obsolete]
-    private IEnumerable GoToNextLevelCo(string levelName)
+    private IEnumerator GoToNextLevelCo(string levelName)
     {
         Player.FinishLevel();
         GameManager.Instance.AddPoints(CurrentTimeBonus);
