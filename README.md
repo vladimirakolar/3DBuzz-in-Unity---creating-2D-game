@@ -18,7 +18,7 @@ I present to you an interesting game that you will love. It was created using th
 
 ### Tools ###
 * *2D space*
-* *Demo version**
+* *Demo version*
 * *2D animation*
 * *2D models*
 * *Simulation*
