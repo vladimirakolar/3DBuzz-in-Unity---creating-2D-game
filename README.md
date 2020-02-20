@@ -17,8 +17,9 @@ I present to you an interesting game that you will love. It was created using th
 * *Visual Studio*
 
 ### Tools ###
-* *2D*
-* *Demo*
-* *3D Animation*
-* *3D models*
+* *2D space*
+* *Demo version**
+* *2D animation*
+* *2D models*
+* *Simulation*
 * *Game Asset*
