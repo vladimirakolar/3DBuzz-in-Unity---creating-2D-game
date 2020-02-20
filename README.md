@@ -1,5 +1,7 @@
 ### Demo preview ###
-Preview of the game in available **[2DBuzz](https://vladimirakolar.github.io/3DBuzz-in-Unity---creating-2D-game/)**
+Preview of the game in available on
+- GitHub page : **[2DBuzz](https://vladimirakolar.github.io/3DBuzz-in-Unity---creating-2D-game/)**
+- Simmer page : **[2DBuzz](https://simmer.io/@VladimiraKolar/horror-story)**
 
 ### Description ###
 I present to you an interesting game that you will love. It was created using the Unity program.
