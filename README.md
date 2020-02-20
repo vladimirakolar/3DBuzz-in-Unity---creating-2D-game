@@ -10,15 +10,15 @@ I present to you an interesting game that you will love. It was created using th
  In order to make the game functional, I achieved it by using C # encoding. 
 
 ### Tools and technologes ###
-##Technologes##
-*Unity
-*Photoshop
-*3DS Max
-*Visual Studio
+## Technologes ##
+* *Unity*
+* *Photoshop*
+* *3DS Max*
+* *Visual Studio*
 
-##Tools##
-* 2D
-* Demo
-* 3D Animation
-* 3D models
-* Game Asset
+## Tools ##
+* *2D*
+* *Demo*
+* *3D Animation*
+* *3D models*
+* *Game Asset*
