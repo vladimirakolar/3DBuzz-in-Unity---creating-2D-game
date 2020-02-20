@@ -1,7 +1,7 @@
 ### Demo preview ###
-Preview of the game in available on
-- GitHub page : **[2DBuzz](https://vladimirakolar.github.io/3DBuzz-in-Unity---creating-2D-game/)**
-- Simmer page : **[2DBuzz](https://simmer.io/@VladimiraKolar/horror-story)**
+Preview of the game is available on
+- GitHub page : **[2D Buzz Saw](https://vladimirakolar.github.io/3DBuzz-in-Unity---creating-2D-game/)**
+- Simmer page : **[2D Buzz Saw](https://simmer.io/@VladimiraKolar/2d-buzz-saw)**
 
 ### Description ###
 I present to you an interesting game that you will love. It was created using the Unity program.
@@ -10,3 +10,15 @@ I present to you an interesting game that you will love. It was created using th
  In order to make the game functional, I achieved it by using C # encoding. 
 
 ### Tools and technologes ###
+##Technologes##
+*Unity
+*Photoshop
+*3DS Max
+*Visual Studio
+
+##Tools##
+* 2D
+* Demo
+* 3D Animation
+* 3D models
+* Game Asset
