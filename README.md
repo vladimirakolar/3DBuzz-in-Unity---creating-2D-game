@@ -4,10 +4,10 @@ Preview of the game is available on
 - Simmer page : **[2D Buzz Saw](https://simmer.io/@VladimiraKolar/2d-buzz-saw)**
 
 ## Description ##
-I present to you an interesting game that you will love. It was created using the Unity program.
- While making, the entire process was followed for the 2D game to work. 
- From the graphic drawing of objects that are on the scene and the creation of the character, animation, sound, controllers and more have been customized. 
- In order to make the game functional, I achieved it by using C # encoding. 
+This is a simple 2D, Super Mario like game. It was created using the Unity cross-platform game engine. 
+The entire development process was with the focus on the working and playable 2D game. 
+Game development included the graphic drawing of objects on the scene, creation of the characters, animations, sounds, controllers and much more. 
+On the backend, the game dynamics was developed using C# language.
 
 ## Tools and technologes ##
 ### Technologes ###
