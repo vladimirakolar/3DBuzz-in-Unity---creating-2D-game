@@ -1,5 +1,5 @@
-## Demo preview ##
-Preview of the game is available on
+## Game ##
+The game can be played on the following links :
 - GitHub page : **[2D Buzz Saw](https://vladimirakolar.github.io/3DBuzz-in-Unity---creating-2D-game/)**
 - Simmer page : **[2D Buzz Saw](https://simmer.io/@VladimiraKolar/2d-buzz-saw)**
 
@@ -9,14 +9,11 @@ The entire development process was with the focus on the working and playable 2D
 Game development included the graphic drawing of objects on the scene, creation of the characters, animations, sounds, controllers and much more. 
 On the backend, the game dynamics was developed using C# language.
 
-## Tools and technologes ##
-### Technologes ###
+## Tools and technologies ##
 * *Unity*
 * *Photoshop*
 * *3DS Max*
 * *Visual Studio*
-
-### Tools ###
 * *2D space*
 * *Demo version*
 * *2D animation*
